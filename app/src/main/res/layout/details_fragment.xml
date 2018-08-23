@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0F2F1"
+
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTitle"
+        android:textSize="30sp"
+        android:gravity="left"
+        android:paddingTop="30dp"
+        android:background="#009688"
+        android:textColor="#fff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:src="@drawable/broken"
+        android:layout_below="@id/tvTitle"
+        android:layout_margin="5dp"
+        android:id="@+id/ivBackPster"
+        android:foregroundGravity="center"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:background="#4DB6AC"
+        android:text="Original Title"
+        android:layout_below="@id/ivBackPster"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/tvOriginalHint"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvOriginalHint"
+        android:text="Title"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@android:color/darker_gray"
+
+        android:id="@+id/tvOriginalTitle"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:background="#4DB6AC"
+        android:layout_below="@id/tvOriginalTitle"
+        android:layout_alignParentLeft="true"
+        android:text="Overview"
+        android:id="@+id/tvOverviewHint"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_below="@id/tvOverviewHint"
+        android:id="@+id/tvOverview"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_toEndOf="@id/ivBackPster"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="release date"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/darker_gray"
+        android:id="@+id/tvReleaseDate"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvReleaseDate"
+        android:layout_toEndOf="@id/ivBackPster"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@id/tvReleaseDate"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="r264168416 count "
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="@android:color/darker_gray"
+        android:id="@+id/tvVoteCount"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvVoteCount"
+        android:layout_alignStart="@id/tvReleaseDate"
+       android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Rate"
+        android:textSize="24sp"
+        android:textColor="@android:color/darker_gray"
+
+        android:id="@+id/tvVoteAverage"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAddToFav"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tvVoteAverage"
+        android:layout_alignStart="@id/tvReleaseDate"
+       />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_below="@id/tvOverview"
+        android:text="Trailers"
+        android:background="#4DB6AC"
+
+        android:id="@+id/tvTrailerHint"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTrailerHint"
+        android:id="@+id/recyclerTrailerView" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:background="#4DB6AC"
+        android:text="Reviews"
+        android:layout_below="@id/recyclerTrailerView"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/tvReviewHint"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvReviewHint"
+        android:id="@+id/recyclerReviewView" />
+
+</RelativeLayout>
+    </ScrollView>

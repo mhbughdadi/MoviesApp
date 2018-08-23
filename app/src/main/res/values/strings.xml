@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Movie App</string>
+    <string name="popular">popular</string>
+    <string name="popular_default">popular</string>
+    <string name="top_rated">top_rated</string>
+    <string name="top_rated_default">top_rated</string>
+    <string name="option">option</string>
+    <string name="details_title">Details</string>
+    <string name="favorates_title">Favorates</string>
+    <string name="home_title">Home</string>
+
+</resources>
